@@ -13,10 +13,12 @@
     pkgs.git
     pkgs.zed-editor
     pkgs.ghostty
-
+    
     pkgsUnstable.claude-code
     pkgsUnstable.codex
 
     herdrPkg
   ];
+
+  programs.direnv.enable = true;
 }
