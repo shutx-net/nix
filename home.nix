@@ -16,7 +16,7 @@
 
     # Written to ~/.config/ghostty/config
     settings = {
-      background-opacity = 0.85;
+      background-opacity = 0.88;
     };
   };
 }
