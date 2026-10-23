@@ -2,7 +2,7 @@
 
 # ❄️ NixOS Workstation
 
-shutx の NixOS 設定（Flakes）
+shutx's NixOS configuration (Flakes)
 
 [![NixOS](https://img.shields.io/badge/NixOS-26.05-5277C3?style=for-the-badge&logo=nixos&logoColor=white)](https://nixos.org)
 [![Flakes](https://img.shields.io/badge/Nix-Flakes-7EBAE4?style=for-the-badge&logo=nixos&logoColor=white)](https://wiki.nixos.org/wiki/Flakes)
@@ -10,16 +10,16 @@ shutx の NixOS 設定（Flakes）
 
 </div>
 
-## 構成
+## Structure
 
-| ファイル | 内容 |
+| File | Description |
 | --- | --- |
-| `flake.nix` | エントリポイント（nixpkgs 26.05 / unstable / herdr） |
-| `configuration.nix` | システム設定 |
-| `apps.nix` | インストールするツール・アプリ |
-| `hardware-configuration.nix` | ハードウェア設定（自動生成） |
+| `flake.nix` | Entry point (nixpkgs 26.05 / unstable / herdr) |
+| `configuration.nix` | System settings |
+| `apps.nix` | Tools and apps to install |
+| `hardware-configuration.nix` | Hardware settings (auto-generated) |
 
-## 使い方
+## Usage
 
 ```bash
 sudo nixos-rebuild switch --flake .#nixos

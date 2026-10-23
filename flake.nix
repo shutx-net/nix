@@ -7,7 +7,7 @@
 
     unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
 
-    # Herdr公式
+    # Official Herdr flake
     herdr.url = "github:herdrdev/herdr";
   };
 
