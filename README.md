@@ -14,9 +14,10 @@ shutx's NixOS configuration (Flakes)
 
 | File | Description |
 | --- | --- |
-| `flake.nix` | Entry point (nixpkgs 26.05 / unstable / herdr) |
+| `flake.nix` | Entry point (nixpkgs 26.05 / unstable / herdr / home-manager) |
 | `configuration.nix` | System settings |
-| `apps.nix` | Tools and apps to install |
+| `apps.nix` | System-wide tools and apps |
+| `home.nix` | User apps and their settings via Home Manager (Zed, Ghostty) |
 | `hardware-configuration.nix` | Hardware settings (auto-generated) |
 
 ## Usage
