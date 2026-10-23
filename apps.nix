@@ -11,8 +11,6 @@
     pkgs.google-chrome
     pkgs.gh
     pkgs.git
-    pkgs.zed-editor
-    pkgs.ghostty
     
     pkgsUnstable.claude-code
     pkgsUnstable.codex

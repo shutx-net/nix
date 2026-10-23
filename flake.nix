@@ -9,9 +9,14 @@
 
     # Official Herdr flake
     herdr.url = "github:herdrdev/herdr";
+
+    home-manager = {
+      url = "github:nix-community/home-manager/release-26.05";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { nixpkgs, unstable, herdr, ... }:
+  outputs = { nixpkgs, unstable, herdr, home-manager, ... }:
     let
       system = "x86_64-linux";
 
@@ -32,6 +37,15 @@
         modules = [
           ./configuration.nix
           ./apps.nix
+
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            # Back up existing files instead of failing when they are in the way
+            home-manager.backupFileExtension = "bak";
+            home-manager.users.shutx = ./home.nix;
+          }
         ];
       };
     };
