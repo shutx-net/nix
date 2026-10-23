@@ -17,6 +17,9 @@
     # Written to ~/.config/ghostty/config
     settings = {
       background-opacity = 0.88;
+
+      # ANSI green, used by the bash prompt. The default (#b5bd68) looks olive.
+      palette = [ "2=#3fb950" ];
     };
   };
 }
