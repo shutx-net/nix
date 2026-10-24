@@ -25,4 +25,15 @@
       palette = [ "2=#3fb950" ];
     };
   };
+
+  programs.plasma = {
+    enable = true;
+
+    # Written to ~/.config/powerdevilrc; profiles not set here keep Plasma's defaults.
+    powerdevil.AC = {
+      dimDisplay.enable = false;
+      turnOffDisplay.idleTimeout = "never";
+      autoSuspend.action = "nothing";
+    };
+  };
 }
