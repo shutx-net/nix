@@ -8,7 +8,10 @@
 
     # Merged into ~/.config/zed/settings.json on switch.
     # Keys set here take precedence; other settings changed in Zed are kept.
-    userSettings = { };
+    userSettings = {
+      project_panel.dock = "left";
+      git_panel.dock = "left";
+    };
   };
 
   programs.ghostty = {
