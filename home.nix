@@ -35,5 +35,8 @@
       turnOffDisplay.idleTimeout = "never";
       autoSuspend.action = "nothing";
     };
+
+    # Never lock the screen on idle (~/.config/kscreenlockerrc).
+    kscreenlocker.autoLock = false;
   };
 }
